@@ -1,4 +1,9 @@
+image: ruby:3.4
+command: gem install jekyll bundler && bundle install && bundle exec jekyll build
+public: _site
+
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - _config.yml
